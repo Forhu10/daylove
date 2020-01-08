@@ -18,7 +18,7 @@ var firstday = new Date("2018-02-12");
 
 var passtime = now.getTime()-firstday.getTime();
 
-var passday = Math.(passtime/(1000*60*60*24));
+var passday = Math.floor(passtime/(1000*60*60*24));
 
 document.querySelector("#main_day").innerHTML = passday + " 일";
 
